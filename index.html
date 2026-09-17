@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<html lang="zh-CN" class="js"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ZHOU · 电商设计师个人作品集</title>
@@ -875,11 +874,18 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@1/Sortable.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.css">
 <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
-</head>
-<body>
+<style>
+      #pc-image-viewer-root img {
+        background-color: transparent !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+      }
+    </style></head>
+<body class="">
 
 <!-- 自定义光标 -->
-<div class="cursor-dot" id="cursorDot"><div class="cursor-dot-inner"></div></div>
+<div class="cursor-dot hover" id="cursorDot" style="opacity: 1; transform: translate3d(1912.04px, 15.071px, 0px);"><div class="cursor-dot-inner"></div></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
 <!-- ===== 导航栏 ===== -->
@@ -922,13 +928,13 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
       </div>
     </div>
     <div class="hero-art">
-      <img src="rocket.png" alt="骑火箭的女孩 - 电商设计师插画">
+      <img src="rocket.png" alt="骑火箭的女孩 - 电商设计师插画" draggable="false" style="transform: translate(10.4062px, -7.75585px);">
     </div>
   </div>
   <!-- FROM 2018 - NOW + 环绕圆点 -->
   <div class="hero-from">
     <span class="from-group">
-      <img src="环绕圆点.png" alt="" class="from-ring">
+      <img src="环绕圆点.png" alt="" class="from-ring" draggable="false">
       <span class="from-label" data-text="hero_from_label">FROM</span>
     </span>
     <span class="from-year" data-text="hero_from_year">2018 - NOW</span>
@@ -946,7 +952,7 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
         <div class="about-avatar-wrap">
           <div class="about-avatar-ring"></div>
           <div class="about-avatar">
-            <img src="avatar.png" alt="周指华头像" loading="lazy" decoding="async">
+            <img src="avatar.png" alt="周指华头像" loading="lazy" decoding="async" draggable="false" class="loaded">
           </div>
           <span class="float-tag tag-top" data-text="about_tag_top">🚀 转化率提升</span>
           <span class="float-tag tag-bottom" data-text="about_tag_bottom">💡 创意驱动</span>
@@ -956,7 +962,7 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
       <!-- 中栏：自我介绍 -->
       <div class="about-mid">
         <h3 data-text="about_hello">嗨，我是 Zoe —— 一名电商视觉设计师</h3>
-        <p data-text="about_desc1">专注电商设计多年，擅长从品牌调性出发，把“货架逻辑”与“视觉美感”结合起来，让每一张图既好看、又真的能卖货。</p>
+        <p data-text="about_desc1">专注电商设计多年，擅长从品牌调性出发，把"货架逻辑"与"视觉美感"结合起来，让每一张图既好看、又真的能卖货。</p>
         <p data-text="about_desc2">服务过3C、户外、母婴、宠物、服饰等多个类目，累计输出数百套首页视觉、详情页与营销活动页。我相信：好的电商设计，是用创意让人停留，用信息让人下单。</p>
         <div class="about-stats">
           <div class="stat-card"><b class="count-up" data-target="8">0</b><span data-text="about_stat1_label">年设计经验</span></div>
@@ -969,35 +975,35 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
         <div class="skill-title-bar" data-text="skill_title">主要设计技能</div>
         <div class="skill-bars">
           <div class="skill-bar">
-            <img src="skill-06.png" alt="" class="sicon-img" loading="lazy" decoding="async">
+            <img src="skill-06.png" alt="" class="sicon-img loaded" loading="lazy" decoding="async" draggable="false">
             <div class="skill-bar-body">
               <div class="skill-bar-track"><div class="skill-bar-fill c1" data-w="72"></div></div>
               <div class="skill-bar-label" data-text="skill1">AIGC</div>
             </div>
           </div>
           <div class="skill-bar">
-            <img src="skill-07.png" alt="" class="sicon-img" loading="lazy" decoding="async">
+            <img src="skill-07.png" alt="" class="sicon-img loaded" loading="lazy" decoding="async" draggable="false">
             <div class="skill-bar-body">
               <div class="skill-bar-track"><div class="skill-bar-fill c2" data-w="85"></div></div>
               <div class="skill-bar-label" data-text="skill2">Adobe Photoshop</div>
             </div>
           </div>
           <div class="skill-bar">
-            <img src="skill-08.png" alt="" class="sicon-img" loading="lazy" decoding="async">
+            <img src="skill-08.png" alt="" class="sicon-img loaded" loading="lazy" decoding="async" draggable="false">
             <div class="skill-bar-body">
               <div class="skill-bar-track"><div class="skill-bar-fill c3" data-w="80"></div></div>
               <div class="skill-bar-label" data-text="skill3">Adobe Illustrator</div>
             </div>
           </div>
           <div class="skill-bar">
-            <img src="skill-04.png" alt="" class="sicon-img" loading="lazy" decoding="async">
+            <img src="skill-04.png" alt="" class="sicon-img loaded" loading="lazy" decoding="async" draggable="false">
             <div class="skill-bar-body">
               <div class="skill-bar-track"><div class="skill-bar-fill c4" data-w="68"></div></div>
               <div class="skill-bar-label" data-text="skill4">Cinema 4D</div>
             </div>
           </div>
           <div class="skill-bar">
-            <img src="skill-05.png" alt="" class="sicon-img" loading="lazy" decoding="async">
+            <img src="skill-05.png" alt="" class="sicon-img loaded" loading="lazy" decoding="async" draggable="false">
             <div class="skill-bar-body">
               <div class="skill-bar-track"><div class="skill-bar-fill c5" data-w="70"></div></div>
               <div class="skill-bar-label" data-text="skill5">Keyshot</div>
@@ -1009,7 +1015,7 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
   </div>
   <div class="scroll-hint">
     <div class="scroll-cuboid">
-      <div class="scroll-cuboid-inner" id="scrollCuboid">
+      <div class="scroll-cuboid-inner" id="scrollCuboid" style="transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important; transform: rotateX(90deg) !important;">
         <div class="scroll-cuboid-face f1" data-text="scroll_hint">向下滚动浏览作品 ↓</div>
         <div class="scroll-cuboid-face f2" data-text="scroll_hint">向下滚动浏览作品 ↓</div>
         <div class="scroll-cuboid-face f3" data-text="scroll_hint">向下滚动浏览作品 ↓</div>
@@ -1022,7 +1028,7 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
 <!-- ===== 作品 ===== -->
 <section class="section works" id="works">
   <div class="works-header">
-    <img src="red-line.png" alt="" class="works-redline" loading="lazy" decoding="async">
+    <img src="red-line.png" alt="" class="works-redline loaded" loading="lazy" decoding="async" draggable="false">
     <h2 class="works-title" data-text="works_title">我的作品</h2>
   </div>
   <div class="wrap">
@@ -1033,16 +1039,472 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
       <button class="filter-btn" data-cat="渲染" data-text="cat_render">渲染</button>
       <button class="filter-btn" data-cat="精修" data-text="cat_retouch">精修</button>
       <button class="filter-btn" data-cat="其他" data-text="cat_other">其他</button>
-      <button id="saveOrderBtn" style="display:none;background:#578098;color:#fff;border:none;border-radius:24px;padding:8px 20px;font-size:14px;cursor:pointer;margin-left:12px">保存排序</button>
+      <button id="saveOrderBtn" style="display: inline-block; background: rgb(87, 128, 152); color: rgb(255, 255, 255); border: none; border-radius: 24px; padding: 8px 20px; font-size: 14px; cursor: pointer; margin-left: 12px;">保存排序</button>
     </div>
-    <div class="works-grid" id="worksGrid"></div>
+    <div class="works-grid" id="worksGrid" style="display: block; height: 1816px;"><div class="work-card reveal" data-id="1">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="" alt="美妆精华主图" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>美妆精华主图</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="1" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="1" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="4">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="" alt="AI创意合成" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>AI创意合成</h4>
+        <div class="wc-meta">
+          <span class="wc-type">AIGC</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="4" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="4" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="6">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="https://aka.doubaocdn.com/s/J0YXpr0uYU" alt="3D产品渲染" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>3D产品渲染</h4>
+        <div class="wc-meta">
+          <span class="wc-type">渲染</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="6" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="6" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="8">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="https://aka.doubaocdn.com/s/J0YXpr0uYU" alt="产品精修对比" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>产品精修对比</h4>
+        <div class="wc-meta">
+          <span class="wc-type">精修</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="8" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="8" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="10">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="https://aka.doubaocdn.com/s/NUtAhYmL1m" alt="品牌视觉" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>品牌视觉</h4>
+        <div class="wc-meta">
+          <span class="wc-type">其他</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="10" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="10" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="24">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/26.06.24 1蕾丝晚宴包 封面.jpg" alt="蕾丝晚宴包" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>蕾丝晚宴包</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="24" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="24" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="17">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/25.12.09 1宠物双色喂食碗 封面.jpg" alt="宠物双碗喂食碗" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>宠物双碗喂食碗</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="17" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="17" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="18">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/26.02.02 1猫网面伊丽莎白圈 封面.jpg" alt="猫咪网面伊丽莎白圈" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>猫咪网面伊丽莎白圈</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="18" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="18" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="19">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/26.02.27 1扎染宠物毛毯 封面.jpg" alt="扎染宠物毛毯" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>扎染宠物毛毯</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="19" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="19" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="20">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/26.03.26 1小弧形五金晚宴包 封面.jpg" alt="小弧形五金晚宴包" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>小弧形五金晚宴包</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="20" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="20" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="21">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/26.04.20 1狗狗铁链牵引绳 封面.jpg" alt="狗狗铁链牵引绳" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>狗狗铁链牵引绳</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="21" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="21" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="22">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/26.04.21 1装车包 封面-2.jpg" alt="装车包" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>装车包</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="22" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="22" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="23">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/26.06.01 1狗项圈 封面.jpg" alt="狗项圈" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>狗项圈</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2026</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="23" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="23" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="2">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/25.08.21 1圆形不锈钢漂浮水碗 封面.jpg" alt="圆形不锈钢漂浮宠物水碗" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>圆形不锈钢漂浮宠物水碗</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2025</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="2" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="2" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="3">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/25.09.22 1猫陶瓷花瓣慢食碗 封面.jpg" alt="猫咪陶瓷花瓣慢食碗" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>猫咪陶瓷花瓣慢食碗</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2025</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="3" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="3" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="5">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="https://aka.doubaocdn.com/s/BQq8T5OZdr" alt="AI场景渲染" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>AI场景渲染</h4>
+        <div class="wc-meta">
+          <span class="wc-type">AIGC</span>
+          <span class="wc-year">2025</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="5" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="5" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="9">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="https://aka.doubaocdn.com/s/g6JtNvyvPU" alt="人像精修" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>人像精修</h4>
+        <div class="wc-meta">
+          <span class="wc-type">精修</span>
+          <span class="wc-year">2025</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="9" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="9" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="13">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/25.09.12 1狗狗垃圾铲 封面.jpg" alt="狗狗垃圾铲" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>狗狗垃圾铲</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2025</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="13" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="13" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="14">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/25.10.21 1猫陶瓷慢食碗高脚斜口 封面.jpg" alt="猫咪陶瓷高脚斜口慢食碗" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>猫咪陶瓷高脚斜口慢食碗</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2025</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="14" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="14" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="15">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/25.10.31 1方形不锈钢慢食碗 封面.jpg" alt="狗狗方形不锈钢慢食碗" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>狗狗方形不锈钢慢食碗</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2025</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="15" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="15" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="16">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/25.11.17 1猫不锈钢双碗 封面.jpg" alt="猫咪不锈钢双碗" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>猫咪不锈钢双碗</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2025</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="16" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="16" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="7">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="https://aka.doubaocdn.com/s/BQq8T5OZdr" alt="包装渲染" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>包装渲染</h4>
+        <div class="wc-meta">
+          <span class="wc-type">渲染</span>
+          <span class="wc-year">2024</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="7" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="7" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="12">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="images/2024.10.24 母婴用品-儿童书架.jpg" alt="儿童书架收纳柜" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>儿童书架收纳柜</h4>
+        <div class="wc-meta">
+          <span class="wc-type">主图/详情</span>
+          <span class="wc-year">2024</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="12" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="12" title="右移">›</button>
+      </div>
+    </div><div class="work-card reveal" data-id="11">
+      
+      <div class="wc-img-wrap">
+        <img class="wc-img" src="https://aka.doubaocdn.com/s/zjyoLmv8dd" alt="活动海报" loading="lazy" decoding="async" draggable="false">
+        
+      </div>
+      
+      <div class="wc-info">
+        <h4>活动海报</h4>
+        <div class="wc-meta">
+          <span class="wc-type">其他</span>
+          <span class="wc-year">2023</span>
+        </div>
+      </div>
+      
+      <div class="wc-admin-btns">
+        <button class="wc-sort-btn wc-left" data-id="11" title="左移">‹</button>
+        <button class="wc-sort-btn wc-right" data-id="11" title="右移">›</button>
+      </div>
+    </div></div>
   </div>
 </section>
 
 <!-- ===== 联系 ===== -->
 <section class="section contact" id="contact">
   <div class="contact-inner">
-    <img src="rocket.png" alt="骑火箭的女孩" class="contact-rocket" loading="lazy" decoding="async">
+    <img src="rocket.png" alt="骑火箭的女孩" class="contact-rocket loaded" loading="lazy" decoding="async" draggable="false">
     <h2 class="contact-thanks" data-text="contact_thanks">感谢您的耐心观看</h2>
     <p class="contact-sub" data-text="contact_sub">期待您的联系</p>
     <div class="contact-info">
@@ -1064,7 +1526,7 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
 
 <!-- ===== 页脚 ===== -->
 <footer class="footer">
-  <span data-text="footer">© 2026 <b>ZHOU.</b> 周指华个人作品集 · 用心设计每一个像素</span>
+  <span data-text="footer">© 2026 ZHOU. 周指华个人作品集 · 用心设计每一个像素</span>
 </footer>
 
 <!-- ===== 灯箱（图2样式：左大图+右侧栏） ===== -->
@@ -1072,7 +1534,7 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
   <div class="lb-main">
     <button class="lb-nav lb-prev" id="lbPrev">‹</button>
     <div class="lb-img-wrap" id="lbImgWrap">
-      <img id="lbImg" src="" alt="作品大图">
+      <img id="lbImg" src="" alt="作品大图" draggable="false">
     </div>
     <button class="lb-nav lb-next" id="lbNext">›</button>
     <div class="lb-counter" id="lbCounter">1/1</div>
@@ -1089,8 +1551,8 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
   <div class="lb-main">
     <button class="lb-nav cmp-prev" id="cmpPrev">‹</button>
     <div class="compare-stage" id="compareStage">
-      <img class="cmp-img cmp-base" id="cmpBase" src="" alt="图1">
-      <img class="cmp-img cmp-overlay" id="cmpOverlay" src="" alt="图2">
+      <img class="cmp-img cmp-base" id="cmpBase" src="" alt="图1" draggable="false">
+      <img class="cmp-img cmp-overlay" id="cmpOverlay" src="" alt="图2" draggable="false">
       <div class="cmp-divider" id="cmpDivider">
         <div class="cmp-handle">⟷</div>
       </div>
@@ -1170,11 +1632,12 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
       </div>
     </label>
     <label>图片（每行一个URL，推荐相对路径如 images/xxx.jpg；或点下方按钮选本地图）
-      <textarea id="editImages" rows="4" placeholder="images/作品1-首图.jpg&#10;images/作品1-详情2.jpg"></textarea>
+      <textarea id="editImages" rows="4" placeholder="images/作品1-首图.jpg
+images/作品1-详情2.jpg"></textarea>
     </label>
     <div class="admin-upload-row">
       <button type="button" class="admin-upload-btn" id="uploadImgBtn">+ 选择本地图片</button>
-      <input type="file" id="uploadImgInput" accept="image/*" multiple style="display:none">
+      <input type="file" id="uploadImgInput" accept="image/*" multiple="" style="display:none">
       <span class="admin-upload-hint">本地上传转base64（适合临时预览）；发布到GitHub建议用 images/ 相对路径</span>
     </div>
     <div class="admin-img-preview" id="editImgPreview"></div>
@@ -1201,7 +1664,52 @@ const DEFAULT_SITE_TEXTS = {
   contact_thanks: '感谢您的耐心观看', contact_sub: '期待您的联系', contact_phone: '13246603132', contact_wechat: '13246603132', contact_email: '847735071@qq.com',
   footer: '© 2026 <b>ZHOU.</b> 周指华个人作品集 · 用心设计每一个像素',
 };
-let SITE_TEXTS = {...DEFAULT_SITE_TEXTS};
+let SITE_TEXTS = {
+  "nav_brand": "ZHOU.",
+  "nav_home": "首页",
+  "nav_works": "作品",
+  "nav_about": "关于我",
+  "nav_contact": "联系",
+  "hero_year": "2026",
+  "hero_title": "PERSONAL PORTFOLIO",
+  "hero_design_tag": "电商设计",
+  "hero_sub": "个人作品集",
+  "hero_from_label": "FROM",
+  "hero_from_year": "2018 - NOW",
+  "about_name": "周指华",
+  "about_tag_top": "🚀 转化率提升",
+  "about_tag_bottom": "💡 创意驱动",
+  "about_birth": "1999.10.01",
+  "about_hello": "嗨，我是 Zoe —— 一名电商视觉设计师",
+  "about_desc1": "专注电商设计多年，擅长从品牌调性出发，把\"货架逻辑\"与\"视觉美感\"结合起来，让每一张图既好看、又真的能卖货。",
+  "about_desc2": "服务过3C、户外、母婴、宠物、服饰等多个类目，累计输出数百套首页视觉、详情页与营销活动页。我相信：好的电商设计，是用创意让人停留，用信息让人下单。",
+  "about_stat1_num": "8",
+  "about_stat1_label": "年设计经验",
+  "about_stat2_num": "300",
+  "about_stat2_label": "交付案例",
+  "about_stat3_num": "6",
+  "about_stat3_label": "服务类目",
+  "skill_title": "主要设计技能",
+  "skill1": "AIGC",
+  "skill2": "Adobe Photoshop",
+  "skill3": "Adobe Illustrator",
+  "skill4": "Cinema 4D",
+  "skill5": "Keyshot",
+  "scroll_hint": "向下滚动浏览作品 ↓",
+  "works_title": "我的作品",
+  "cat_all": "全部",
+  "cat_main": "主图/详情",
+  "cat_aigc": "AIGC",
+  "cat_render": "渲染",
+  "cat_retouch": "精修",
+  "cat_other": "其他",
+  "contact_thanks": "感谢您的耐心观看",
+  "contact_sub": "期待您的联系",
+  "contact_phone": "13246603132",
+  "contact_wechat": "13246603132",
+  "contact_email": "847735071@qq.com",
+  "footer": "© 2026 ZHOU. 周指华个人作品集 · 用心设计每一个像素"
+};
 function loadSiteTexts(){ 
   try { 
     const s = localStorage.getItem('zhou_site_texts'); 
@@ -1344,7 +1852,13 @@ renderSiteTexts(); // 在所有动画初始化之前渲染文字
 (function(){
   if(new URLSearchParams(location.search).get('admin') === '1'){
     const al = document.getElementById('adminLogin');
-    if(al) al.classList.add('show');
+    if(al){
+      al.classList.add('show');
+      setTimeout(() => {
+        const pwd = document.getElementById('adminPwd');
+        if(pwd) pwd.focus();
+      }, 300);
+    }
   }
 })();
 window.addEventListener('error', function(e){ console.error('JS错误:', e.message, e.filename, e.lineno); });
@@ -1769,7 +2283,460 @@ const DEFAULT_WORKS = [
   {id:10, cat:'其他', title:'品牌视觉', year:2026, images:['https://aka.doubaocdn.com/s/NUtAhYmL1m','https://aka.doubaocdn.com/s/TRGGN1SdDg','https://aka.doubaocdn.com/s/zjyoLmv8dd']},
   {id:11, cat:'其他', title:'活动海报', year:2023, images:['https://aka.doubaocdn.com/s/zjyoLmv8dd','https://aka.doubaocdn.com/s/NUtAhYmL1m']},
 ];
-let WORKS = DEFAULT_WORKS.slice();
+let WORKS = [
+  {
+    "id": 1,
+    "cat": "主图/详情",
+    "title": "美妆精华主图",
+    "year": 2026,
+    "type": "主图/详情",
+    "images": [
+      "https://aka.doubaocdn.com/s/g6JtNvyvPU"
+    ],
+    "cover": "",
+    "order": 0
+  },
+  {
+    "id": 2,
+    "cat": "主图/详情",
+    "title": "圆形不锈钢漂浮宠物水碗",
+    "year": 2025,
+    "type": "",
+    "images": [
+      "images/25.08.21 1圆形不锈钢漂浮水碗 封面.jpg",
+      "images/25.08.21 圆形不锈钢漂浮水碗  0.jpg",
+      "images/25.08.21 圆形不锈钢漂浮水碗  1.jpg",
+      "images/25.08.21 圆形不锈钢漂浮水碗  2.jpg",
+      "images/25.08.21 圆形不锈钢漂浮水碗  3.jpg",
+      "images/25.08.21 圆形不锈钢漂浮水碗  4.jpg",
+      "images/25.08.21 圆形不锈钢漂浮水碗  5.jpg",
+      "images/25.08.21 圆形不锈钢漂浮水碗  6.jpg",
+      "images/25.08.21 圆形不锈钢漂浮水碗  7.jpg",
+      "images/25.08.21 圆形不锈钢漂浮水碗 A+.jpg"
+    ],
+    "cover": "",
+    "order": 1,
+    "pinned": false,
+    "hidden": false
+  },
+  {
+    "id": 3,
+    "cat": "主图/详情",
+    "title": "猫咪陶瓷花瓣慢食碗",
+    "year": 2025,
+    "type": "",
+    "images": [
+      "images/25.09.22 1猫陶瓷花瓣慢食碗 封面.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 1.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 2.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 3.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 4.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 4-1.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 5.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 6.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 7.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 8.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 9.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 A+.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 A+1.jpg",
+      "images/25.09.22 猫陶瓷花瓣慢食碗 A+2.jpg"
+    ],
+    "cover": "",
+    "order": 2,
+    "pinned": false,
+    "hidden": false
+  },
+  {
+    "id": 4,
+    "cat": "AIGC",
+    "title": "AI创意合成",
+    "year": 2026,
+    "images": [],
+    "type": "",
+    "order": 3
+  },
+  {
+    "id": 5,
+    "cat": "AIGC",
+    "title": "AI场景渲染",
+    "year": 2025,
+    "images": [
+      "https://aka.doubaocdn.com/s/BQq8T5OZdr",
+      "https://aka.doubaocdn.com/s/zjyoLmv8dd"
+    ],
+    "order": 4
+  },
+  {
+    "id": 6,
+    "cat": "渲染",
+    "title": "3D产品渲染",
+    "year": 2026,
+    "images": [
+      "https://aka.doubaocdn.com/s/J0YXpr0uYU",
+      "https://aka.doubaocdn.com/s/TRGGN1SdDg",
+      "https://aka.doubaocdn.com/s/g6JtNvyvPU"
+    ],
+    "order": 5
+  },
+  {
+    "id": 7,
+    "cat": "渲染",
+    "title": "包装渲染",
+    "year": 2024,
+    "images": [
+      "https://aka.doubaocdn.com/s/BQq8T5OZdr",
+      "https://aka.doubaocdn.com/s/J0YXpr0uYU"
+    ],
+    "order": 6
+  },
+  {
+    "id": 8,
+    "cat": "精修",
+    "title": "产品精修对比",
+    "year": 2026,
+    "images": [
+      "https://aka.doubaocdn.com/s/J0YXpr0uYU",
+      "https://aka.doubaocdn.com/s/NUtAhYmL1m"
+    ],
+    "order": 7
+  },
+  {
+    "id": 9,
+    "cat": "精修",
+    "title": "人像精修",
+    "year": 2025,
+    "images": [
+      "https://aka.doubaocdn.com/s/g6JtNvyvPU",
+      "https://aka.doubaocdn.com/s/BQq8T5OZdr"
+    ],
+    "order": 8
+  },
+  {
+    "id": 10,
+    "cat": "其他",
+    "title": "品牌视觉",
+    "year": 2026,
+    "images": [
+      "https://aka.doubaocdn.com/s/NUtAhYmL1m",
+      "https://aka.doubaocdn.com/s/TRGGN1SdDg",
+      "https://aka.doubaocdn.com/s/zjyoLmv8dd"
+    ],
+    "order": 9
+  },
+  {
+    "id": 11,
+    "cat": "其他",
+    "title": "活动海报",
+    "year": 2023,
+    "images": [
+      "https://aka.doubaocdn.com/s/zjyoLmv8dd",
+      "https://aka.doubaocdn.com/s/NUtAhYmL1m"
+    ],
+    "order": 10
+  },
+  {
+    "id": 12,
+    "cat": "主图/详情",
+    "title": "儿童书架收纳柜",
+    "year": 2024,
+    "type": "主图/详情",
+    "cover": "",
+    "images": [
+      "images/2024.10.24 母婴用品-儿童书架.jpg"
+    ],
+    "order": 11
+  },
+  {
+    "id": 13,
+    "cat": "主图/详情",
+    "title": "狗狗垃圾铲",
+    "year": 2025,
+    "type": "",
+    "cover": "",
+    "images": [
+      "images/25.09.12 1狗狗垃圾铲 封面.jpg",
+      "images/25.09.12 狗狗垃圾铲 2.jpg",
+      "images/25.09.12 狗狗垃圾铲 3.jpg",
+      "images/25.09.12 狗狗垃圾铲 4.jpg",
+      "images/25.09.12 狗狗垃圾铲 5.jpg",
+      "images/25.09.12 狗狗垃圾铲 6.jpg",
+      "images/25.09.12 狗狗垃圾铲 7.jpg",
+      "images/25.09.12 狗狗垃圾铲 8.jpg",
+      "images/25.09.12 狗狗垃圾铲 9.jpg",
+      "images/25.09.12 狗狗垃圾铲 10.jpg",
+      "images/25.09.12 狗狗垃圾铲 A+.jpg"
+    ],
+    "order": 12,
+    "pinned": false,
+    "hidden": false
+  },
+  {
+    "id": 14,
+    "cat": "主图/详情",
+    "title": "猫咪陶瓷高脚斜口慢食碗",
+    "year": 2025,
+    "type": "",
+    "cover": "images/25.10.21 1猫陶瓷慢食碗高脚斜口 封面.jpg",
+    "images": [
+      "images/25.10.21 1猫陶瓷慢食碗高脚斜口 封面.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 2.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 3.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 4.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 5.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 6.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 7.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 8.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 9.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 A+.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 A+1.jpg",
+      "images/25.10.21 猫陶瓷慢食碗高脚斜口 A+2.jpg"
+    ],
+    "order": 13,
+    "pinned": false,
+    "hidden": false
+  },
+  {
+    "id": 15,
+    "cat": "主图/详情",
+    "title": "狗狗方形不锈钢慢食碗",
+    "year": 2025,
+    "type": "",
+    "cover": "images/25.10.31 1方形不锈钢慢食碗 封面.jpg",
+    "images": [
+      "images/25.10.31 1方形不锈钢慢食碗 封面.jpg",
+      "images/25.10.31 方形不锈钢慢食碗 1.jpg",
+      "images/25.10.31 方形不锈钢慢食碗 2.jpg",
+      "images/25.10.31 方形不锈钢慢食碗 3.jpg",
+      "images/25.10.31 方形不锈钢慢食碗 4.jpg",
+      "images/25.10.31 方形不锈钢慢食碗 5.jpg",
+      "images/25.10.31 方形不锈钢慢食碗 6.jpg",
+      "images/25.10.31 方形不锈钢慢食碗 7.jpg",
+      "images/25.10.31 方形不锈钢慢食碗 8.jpg",
+      "images/25.10.31 方形不锈钢慢食碗 A+.jpg"
+    ],
+    "order": 14,
+    "pinned": false,
+    "hidden": false
+  },
+  {
+    "id": 16,
+    "cat": "主图/详情",
+    "title": "猫咪不锈钢双碗",
+    "year": 2025,
+    "type": "",
+    "cover": "images/25.11.17 1猫不锈钢双碗 封面.jpg",
+    "images": [
+      "images/25.11.17 1猫不锈钢双碗 封面.jpg",
+      "images/25.11.17 猫不锈钢双碗 1.jpg",
+      "images/25.11.17 猫不锈钢双碗 3.jpg",
+      "images/25.11.17 猫不锈钢双碗 4.jpg",
+      "images/25.11.17 猫不锈钢双碗 5.jpg",
+      "images/25.11.17 猫不锈钢双碗 6.jpg",
+      "images/25.11.17 猫不锈钢双碗 7.jpg",
+      "images/25.11.17 猫不锈钢双碗 8.jpg",
+      "images/25.11.17 猫不锈钢双碗 9.jpg",
+      "images/25.11.17 猫不锈钢双碗 A+.jpg",
+      "images/25.11.17 猫不锈钢双碗 A+1.jpg",
+      "images/25.11.17 猫不锈钢双碗 A+2.jpg",
+      "images/25.11.17 猫不锈钢双碗 A+3.jpg"
+    ],
+    "order": 15,
+    "pinned": false,
+    "hidden": false
+  },
+  {
+    "id": 24,
+    "cat": "主图/详情",
+    "title": "蕾丝晚宴包",
+    "year": 2026,
+    "type": "",
+    "cover": "",
+    "images": [
+      "images/26.06.24 1蕾丝晚宴包 封面.jpg",
+      "images/26.06.24 蕾丝晚宴包 1.jpg",
+      "images/26.06.24 蕾丝晚宴包 2.jpg",
+      "images/26.06.24 蕾丝晚宴包 3.jpg",
+      "images/26.06.24 蕾丝晚宴包 4.jpg",
+      "images/26.06.24 蕾丝晚宴包 5.jpg",
+      "images/26.06.24 蕾丝晚宴包 6.jpg",
+      "images/26.06.24 蕾丝晚宴包 7.jpg",
+      "images/26.06.24 蕾丝晚宴包 8.jpg",
+      "images/26.06.24 蕾丝晚宴包 A+.jpg",
+      "images/26.06.24 蕾丝晚宴包 A+1.jpg",
+      "images/26.06.24 蕾丝晚宴包 A+2.jpg",
+      "images/26.06.24 蕾丝晚宴包 A+3.jpg"
+    ],
+    "pinned": false,
+    "hidden": false,
+    "order": 16
+  },
+  {
+    "id": 17,
+    "cat": "主图/详情",
+    "title": "宠物双碗喂食碗",
+    "year": 2026,
+    "type": "",
+    "cover": "",
+    "images": [
+      "images/25.12.09 1宠物双色喂食碗 封面.jpg",
+      "images/25.12.09 宠物双色喂食碗 1.jpg",
+      "images/25.12.09 宠物双色喂食碗 4.jpg",
+      "images/25.12.09 宠物双色喂食碗 5.jpg",
+      "images/25.12.09 宠物双色喂食碗 6.jpg",
+      "images/25.12.09 宠物双色喂食碗 7.jpg",
+      "images/25.12.09 宠物双色喂食碗 8.jpg",
+      "images/25.12.09 宠物双色喂食碗 9.jpg",
+      "images/25.12.09 宠物双色喂食碗 A+.jpg",
+      "images/25.12.09 宠物双色喂食碗 A+1.jpg",
+      "images/25.12.09 宠物双色喂食碗 A+2.jpg"
+    ],
+    "pinned": false,
+    "hidden": false,
+    "order": 17
+  },
+  {
+    "id": 18,
+    "cat": "主图/详情",
+    "title": "猫咪网面伊丽莎白圈",
+    "year": 2026,
+    "type": "",
+    "cover": "",
+    "images": [
+      "images/26.02.02 1猫网面伊丽莎白圈 封面.jpg",
+      "images/26.02.02 猫网面伊丽莎白圈 1.jpg",
+      "images/26.02.02 猫网面伊丽莎白圈 2.jpg",
+      "images/26.02.02 猫网面伊丽莎白圈 3.jpg",
+      "images/26.02.02 猫网面伊丽莎白圈 4.jpg",
+      "images/26.02.02 猫网面伊丽莎白圈 5.jpg",
+      "images/26.02.02 猫网面伊丽莎白圈 6.jpg",
+      "images/26.02.02 猫网面伊丽莎白圈 7.jpg",
+      "images/26.02.02 猫网面伊丽莎白圈 8.jpg",
+      "images/26.02.02 猫网面伊丽莎白圈 A+.jpg"
+    ],
+    "pinned": false,
+    "hidden": false,
+    "order": 18
+  },
+  {
+    "id": 19,
+    "cat": "主图/详情",
+    "title": "扎染宠物毛毯",
+    "year": 2026,
+    "type": "",
+    "cover": "",
+    "images": [
+      "images/26.02.27 1扎染宠物毛毯 封面.jpg",
+      "images/26.02.27 扎染宠物毛毯 1.jpg",
+      "images/26.02.27 扎染宠物毛毯 2.jpg",
+      "images/26.02.27 扎染宠物毛毯 3.jpg",
+      "images/26.02.27 扎染宠物毛毯 4.jpg",
+      "images/26.02.27 扎染宠物毛毯 5.jpg",
+      "images/26.02.27 扎染宠物毛毯 6.jpg",
+      "images/26.02.27 扎染宠物毛毯 7.jpg",
+      "images/26.02.27 扎染宠物毛毯 8.jpg",
+      "images/26.02.27 扎染宠物毛毯 A+.jpg",
+      "images/26.02.27 扎染宠物毛毯 A+1.jpg",
+      "images/26.02.27 扎染宠物毛毯 A+2.jpg",
+      "images/26.02.27 扎染宠物毛毯 A+3.jpg",
+      "images/26.02.27 扎染宠物毛毯 A+4.jpg",
+      "images/26.02.27 扎染宠物毛毯 A+5.jpg"
+    ],
+    "order": 19,
+    "pinned": false,
+    "hidden": false
+  },
+  {
+    "id": 20,
+    "cat": "主图/详情",
+    "title": "小弧形五金晚宴包",
+    "year": 2026,
+    "type": "",
+    "cover": "",
+    "images": [
+      "images/26.03.26 1小弧形五金晚宴包 封面.jpg",
+      "images/26.03.26 小弧形五金晚宴包 1.jpg",
+      "images/26.03.26 小弧形五金晚宴包 2.jpg",
+      "images/26.03.26 小弧形五金晚宴包 3.jpg",
+      "images/26.03.26 小弧形五金晚宴包 4.jpg",
+      "images/26.03.26 小弧形五金晚宴包 5.jpg",
+      "images/26.03.26 小弧形五金晚宴包 6.jpg",
+      "images/26.03.26 小弧形五金晚宴包 7.jpg",
+      "images/26.03.26 小弧形五金晚宴包 A+.jpg"
+    ],
+    "order": 20,
+    "pinned": false,
+    "hidden": false
+  },
+  {
+    "id": 21,
+    "cat": "主图/详情",
+    "title": "狗狗铁链牵引绳",
+    "year": 2026,
+    "type": "",
+    "cover": "",
+    "images": [
+      "images/26.04.20 1狗狗铁链牵引绳 封面.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 2.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 2-1.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 3.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 4.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 5.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 6.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 7.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 A+.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 A+1.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 A+2.jpg",
+      "images/26.04.20 狗狗铁链牵引绳 A+3.jpg"
+    ],
+    "order": 21,
+    "pinned": false,
+    "hidden": false
+  },
+  {
+    "id": 22,
+    "cat": "主图/详情",
+    "title": "装车包",
+    "year": 2026,
+    "type": "主图",
+    "cover": "",
+    "images": [
+      "images/26.04.21 1装车包 封面-2.jpg",
+      "images/26.04.21 装车包 1.jpg",
+      "images/26.04.21 装车包 2.jpg",
+      "images/26.04.21 装车包 3.jpg",
+      "images/26.04.21 装车包 4.jpg",
+      "images/26.04.21 装车包 5.jpg",
+      "images/26.04.21 装车包 6.jpg",
+      "images/26.04.21 装车包 7.jpg"
+    ],
+    "order": 22,
+    "pinned": false,
+    "hidden": false
+  },
+  {
+    "id": 23,
+    "cat": "主图/详情",
+    "title": "狗项圈",
+    "year": 2026,
+    "type": "",
+    "cover": "",
+    "images": [
+      "images/26.06.01 1狗项圈 封面.jpg",
+      "images/26.06.01 狗项圈 1.jpg",
+      "images/26.06.01 狗项圈 2.jpg",
+      "images/26.06.01 狗项圈 3.jpg",
+      "images/26.06.01 狗项圈 4.jpg",
+      "images/26.06.01 狗项圈 5.jpg",
+      "images/26.06.01 狗项圈 6.jpg",
+      "images/26.06.01 狗项圈 7.jpg",
+      "images/26.06.01 狗项圈 8.jpg",
+      "images/26.06.01 狗项圈 A+.jpg"
+    ],
+    "order": 23,
+    "pinned": false,
+    "hidden": false
+  }
+];
 
 // ===== IndexedDB 存储（大容量，可存大量base64图片） =====
 let db = null;
@@ -2840,26 +3807,46 @@ document.addEventListener('keydown', (e) => {
 
 // 导出发布版
 document.getElementById('exportBtn').addEventListener('click', () => {
-  // 1. 临时退出管理模式（隐藏管理栏）
-  const body = document.body;
-  const wasAdmin = body.classList.contains('admin-mode');
+  // 隐藏管理栏和密码框
+  const wasAdmin = document.body.classList.contains('admin-mode');
   const adminBar = document.getElementById('adminBar');
-  const adminBarWasShow = adminBar.classList.contains('show');
-  
-  body.classList.remove('admin-mode');
+  const adminLogin = document.getElementById('adminLogin');
+  const wasBarShow = adminBar.classList.contains('show');
+  const wasLoginShow = adminLogin.classList.contains('show');
+  document.body.classList.remove('admin-mode');
   adminBar.classList.remove('show');
-  
-  // 2. 抓取当前HTML（此时是纯游客模式）
-  let html = document.documentElement.outerHTML;
-  
-  // 3. 立即恢复管理模式
-  if(wasAdmin) body.classList.add('admin-mode');
-  if(adminBarWasShow) adminBar.classList.add('show');
-  
-  // 4. 把默认数据替换成当前修改后的数据（只替换这两行，其他代码完全不动）
-  const worksData = JSON.stringify(WORKS, null, 2);
+  adminLogin.classList.remove('show');
+
+  // 保存并清空所有动画元素的内联样式和.in类，让导出文件打开时动画能重新播放
+  const animatedEls = document.querySelectorAll('.reveal, .hero-year, .hero-title, .hero-tagrow, .hero-from, .hero-art, .float-tag, .skill-bar, .round-photo, .red-line, .my-works, .rocket-girl');
+  const saved = [];
+  animatedEls.forEach(el => {
+    saved.push({el, style: el.getAttribute('style') || '', cls: el.className});
+    el.removeAttribute('style');
+    el.classList.remove('in');
+  });
+
+  let html = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+
+  // 恢复
+  saved.forEach(s => {
+    if(s.style) s.el.setAttribute('style', s.style);
+    s.el.className = s.cls;
+  });
+  if(wasAdmin) document.body.classList.add('admin-mode');
+  if(wasBarShow) adminBar.classList.add('show');
+  if(wasLoginShow) adminLogin.classList.add('show');
+
+  // 替换数据：导出时自动过滤base64图片
+  const exportWorks = WORKS.map(w => {
+    const filtered = {...w};
+    if(filtered.images) filtered.images = filtered.images.filter(img => !img.startsWith('data:image/'));
+    if(filtered.cover && filtered.cover.startsWith('data:image/')) filtered.cover = '';
+    return filtered;
+  });
+  const worksData = JSON.stringify(exportWorks, null, 2);
   const textsData = JSON.stringify(SITE_TEXTS, null, 2);
-  
+
   html = html.replace(
     'let WORKS = DEFAULT_WORKS.slice();',
     'let WORKS = ' + worksData + ';'
@@ -2868,9 +3855,15 @@ document.getElementById('exportBtn').addEventListener('click', () => {
     'let SITE_TEXTS = {...DEFAULT_SITE_TEXTS};',
     'let SITE_TEXTS = ' + textsData + ';'
   );
-  
-  // 5. 导出
-  const blob = new Blob(['<!DOCTYPE html>\n' + html], {type:'text/html;charset=utf-8'});
+
+  // 导出版不显示密码弹窗
+  html = html.replace('class="admin-login"', 'class="admin-login"');
+
+  // 从HTML中删除所有base64图片数据（只保留URL格式的）
+  html = html.replace(/src="data:image\/[^"]*"/g, 'src=""');
+
+  // 导出
+  const blob = new Blob([html], {type:'text/html;charset=utf-8'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
   a.download = 'ZHOU作品集-发布版.html';
@@ -2878,5 +3871,6 @@ document.getElementById('exportBtn').addEventListener('click', () => {
   URL.revokeObjectURL(a.href);
 });
 </script>
-</body>
-</html>
+
+
+<div id="pc-image-viewer-root" style="position: fixed; top: 0px; left: 0px; width: 0px; height: 0px; z-index: 2147483647; pointer-events: none;"></div></body></html>
