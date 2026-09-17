@@ -885,11 +885,11 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
 <body class="">
 
 <!-- 自定义光标 -->
-<div class="cursor-dot hover" id="cursorDot" style="opacity: 1; transform: translate3d(1917px, 17.7436px, 0px);"><div class="cursor-dot-inner"></div></div>
+<div class="cursor-dot hover" id="cursorDot" style="opacity: 1; transform: translate3d(1923.73px, 27.335px, 0px);"><div class="cursor-dot-inner"></div></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
 <!-- ===== 导航栏 ===== -->
-<header class="nav" id="nav">
+<header class="nav scrolled" id="nav">
   <div class="nav-inner">
     <a href="#home" class="brand" data-text="nav_brand">ZHOU.</a>
     <ul class="nav-links">
@@ -928,7 +928,7 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
       </div>
     </div>
     <div class="hero-art">
-      <img src="rocket.png" alt="骑火箭的女孩 - 电商设计师插画" draggable="false" style="transform: translate(10.4648px, -7.70702px);">
+      <img src="rocket.png" alt="骑火箭的女孩 - 电商设计师插画" draggable="false" style="transform: translate(10.5469px, -7.56053px);">
     </div>
   </div>
   <!-- FROM 2018 - NOW + 环绕圆点 -->
@@ -945,7 +945,7 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
 <section class="section about" id="about">
   <div class="wrap about-wrap">
     <div class="about-card" id="aboutCard" style="transition: transform 0.9s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.6s !important; opacity: 1; transform: translateY(0px) scale(1);">
-      <div class="about-glow" id="aboutGlow" style="left: 1052.07px; top: 357.024px;"></div>
+      <div class="about-glow" id="aboutGlow" style="left: 692.084px; top: 456.15px;"></div>
       <!-- 左栏：头像 -->
       <div class="about-left">
         <h2 class="about-name" data-text="about_name" style="transition: opacity 0.5s !important; opacity: 1;">周指华</h2>
@@ -1015,7 +1015,7 @@ html.js .reveal.in{opacity:1;transform:none;filter:blur(0)}
   </div>
   <div class="scroll-hint">
     <div class="scroll-cuboid">
-      <div class="scroll-cuboid-inner" id="scrollCuboid" style="transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important; transform: rotateX(450deg) !important;">
+      <div class="scroll-cuboid-inner" id="scrollCuboid" style="transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important; transform: rotateX(540deg) !important;">
         <div class="scroll-cuboid-face f1" data-text="scroll_hint">向下滚动浏览作品 ↓</div>
         <div class="scroll-cuboid-face f2" data-text="scroll_hint">向下滚动浏览作品 ↓</div>
         <div class="scroll-cuboid-face f3" data-text="scroll_hint">向下滚动浏览作品 ↓</div>
@@ -3534,7 +3534,7 @@ document.addEventListener('touchend', () => { cmpDragging = false; });
 
 // 初始渲染：等IndexedDB加载完成后再渲染
 // renderSiteTexts() 已在前面调用，避免打断动画
-openDB().then(() => loadWorksFromDB()).then(() => {
+Promise.resolve().then(() => {
   renderWorks('全部');
 }).catch(err => {
   console.error('IndexedDB加载失败，使用默认数据:', err);
@@ -3860,6 +3860,8 @@ document.getElementById('exportBtn').addEventListener('click', () => {
   html = html.replace('class="admin-login"', 'class="admin-login"');
   // 导出版隐藏保存排序按钮
   html = html.replace(/<button id="saveOrderBtn"[^>]*>[^<]*<\/button>/, '<!-- 导出版隐藏保存排序按钮 -->');
+  // 导出版不使用IndexedDB，直接用嵌入的WORKS数据
+  html = html.replace('openDB().then(() => loadWorksFromDB())', 'Promise.resolve()');
 
   // 从HTML中删除所有base64图片数据（只保留URL格式的）
   html = html.replace(/src="data:image\/[^"]*"/g, 'src=""');
